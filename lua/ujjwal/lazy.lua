@@ -56,7 +56,7 @@ local plugins = {
         icons_enabled = false,
         component_separators = '|',
         section_separators = '',
-        theme = 'gruvbox',
+        theme = 'zenburn',
       },
     },
   },
@@ -83,24 +83,12 @@ local plugins = {
   --   end
   -- },
   {
-    "ellisonleao/gruvbox.nvim",
+    "phha/zenburn.nvim",
     priority = 1000,
     config = function()
-      require('gruvbox').setup({
-        terminal_colors = true,
-        bold = false,
-        italic = {
-          strings = false,
-          emphasis = false,
-          comments = true,
-          operators = true,
-          folds = false,
-        },
-        contrast = "medium",
-      })
+      require('zenburn').setup({})
 
-
-      vim.cmd([[colorscheme gruvbox]])
+      vim.cmd([[colorscheme zenburn]])
     end
   },
   {
@@ -179,6 +167,7 @@ local plugins = {
   --     })
   --   end,
   -- },
+  { "xiyaowong/transparent.nvim" }
 }
 
 local opts = {}
