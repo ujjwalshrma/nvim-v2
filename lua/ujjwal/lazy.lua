@@ -167,6 +167,9 @@ local plugins = {
   --     })
   --   end,
   -- },
+  {
+    'jose-elias-alvarez/null-ls.nvim'
+  }
 }
 
 local opts = {}
