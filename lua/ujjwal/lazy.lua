@@ -167,7 +167,6 @@ local plugins = {
   --     })
   --   end,
   -- },
-  { "xiyaowong/transparent.nvim" }
 }
 
 local opts = {}
