@@ -56,7 +56,7 @@ local plugins = {
         icons_enabled = false,
         component_separators = '|',
         section_separators = '',
-        theme = 'zenburn',
+        theme = 'monokai-pro',
       },
     },
   },
@@ -83,12 +83,12 @@ local plugins = {
   --   end
   -- },
   {
-    "phha/zenburn.nvim",
+    "loctvl842/monokai-pro.nvim",
     priority = 1000,
     config = function()
-      require('zenburn').setup({})
+      require('monokai-pro').setup({})
 
-      vim.cmd([[colorscheme zenburn]])
+      vim.cmd([[colorscheme monokai-pro]])
     end
   },
   {
