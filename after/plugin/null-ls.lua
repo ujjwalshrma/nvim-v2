@@ -3,6 +3,7 @@ local null_ls = require("null-ls")
 null_ls.setup({
   sources = {
     null_ls.builtins.formatting.prettier.with({
+      extra_filetypes = { "svelte", "typescriptreact", "astro" },
       condition = function(utils)
         return utils.root_has_file({ ".prettierrc", ".prettierrc.json", ".prettierrc.js" })
       end,
@@ -36,4 +37,3 @@ null_ls.setup({
     })
   end,
 })
-
